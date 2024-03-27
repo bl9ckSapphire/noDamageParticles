@@ -1,0 +1,21 @@
+
+# true 로 설정할 시, 대미지 파티클이 보이지 않음.
+# 인게임에서 "/nodamageparticles reload" 명령어로도 설정 가능.
+use-remove-damage-particle: false
+
+
+
+
+
+# 언어 설정
+# MiniMessage 표기법은 https://webui.advntr.dev/ 여기를 참조하세요.
+prefix: <yellow>[ <reset><gradient:#00E0FF:#1FC6F6:#3DACEE:#5C91E5:#7A77DD:#995DD4>대미지 파티클 <reset><yellow>] <reset>
+toggle-on: <prefix><white>대미지 파티클 제거 모드 <yellow>활성화
+toggle-off: <prefix><white>대미지 파티클 제거 모드 <red>비활성화
+unknown-command: <white>알 수 없는 명령어입니다.
+config-reload: <prefix> <white>config 리로드 완료.
+no-permission: <prefix> <white>권한이 없습니다.
+not-a-player: <yellow>이 명령어는 오직 플레이어를 통해서만 사용 가능합니다.
+help-main: <white>대미지 파티클의 가시성을 설정하는 플러그인입니다.
+help-toggle: "<yellow>/nodamageparticles toggle \n<white>• 대미지파티클 상태를 토글하는 명령어."
+help-reload: "<yellow>/nodamageparticles reload \n<white>• 대미지파티클 config 를 리로드하는 명령어."
