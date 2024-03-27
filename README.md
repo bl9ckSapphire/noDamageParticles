@@ -9,6 +9,13 @@
 따라서, 대미지 파티클이 플레이어의 시야에서 보이지 않도록 변경합니다.
 ```
 
+**[ 종속성 ]**
+```
+해당 플러그인은 ProtocolLib 을 필요로 합니다.
+
+ProtocolLib 최신 빌드 >> https://ci.dmulloy2.net/job/ProtocolLib/ 
+```
+
 **[ 주의사항 ]**
 ```
 공격에 의해서만 생기는 대미지 파티클 뿐만 아니라, DAMAGE_INDICATOR 파티클 자체가 모두 보이지 않게 됩니다.
