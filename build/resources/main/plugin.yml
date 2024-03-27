@@ -3,8 +3,6 @@ version: '1.0.0'
 main: com.veronica.nodamageparticles.NoDamageParticles
 api-version: '1.19'
 
-softdepend:
-  - ProtocolLib
 
 permissions:
   nodamageparticles.use:

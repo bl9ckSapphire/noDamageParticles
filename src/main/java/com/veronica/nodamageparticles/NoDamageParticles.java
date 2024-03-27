@@ -9,6 +9,7 @@ import com.veronica.nodamageparticles.command.sub.ToggleCommand;
 import com.veronica.nodamageparticles.config.ConfigHandler;
 import com.veronica.nodamageparticles.listener.DamageParticleListener;
 import net.kyori.adventure.text.minimessage.MiniMessage;
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.Plugin;
@@ -24,8 +25,16 @@ public final class NoDamageParticles extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
+
+        if (!getServer().getPluginManager().isPluginEnabled("ProtocolLib")) {
+            getLogger().severe("[noDamageParticles] ProtocolLib 플러그인이 설치되어 있지 않아 플러그인이 비활성화됩니다.");
+            getServer().getPluginManager().disablePlugin(this);
+            return;
+        }
+
         instance = this;
         logger = this.getLogger();
+
 
         // MiniMessage 사용을 위한 의존성 검사 try-catch
         try {
