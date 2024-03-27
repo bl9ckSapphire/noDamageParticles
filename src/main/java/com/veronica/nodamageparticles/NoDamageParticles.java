@@ -26,15 +26,15 @@ public final class NoDamageParticles extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
 
+        // ProtocolLib 플러그인이 설치되어 있는지 확인
         if (!getServer().getPluginManager().isPluginEnabled("ProtocolLib")) {
-            getLogger().severe("[noDamageParticles] ProtocolLib 플러그인이 설치되어 있지 않아 플러그인이 비활성화됩니다.");
+            getLogger().severe("[noDamageParticles] ProtocolLib 이 설치되어 있지 않습니다.");
             getServer().getPluginManager().disablePlugin(this);
             return;
         }
 
         instance = this;
         logger = this.getLogger();
-
 
         // MiniMessage 사용을 위한 의존성 검사 try-catch
         try {
