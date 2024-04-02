@@ -16,6 +16,11 @@ public class DamageParticleListener extends PacketAdapter {
         super(plugin, PacketType.Play.Client.ADVANCEMENTS, PacketType.Play.Server.WORLD_PARTICLES);
     }
 
+    @Override
+    public void onPacketReceiving(PacketEvent event) {
+        // 아무 작업도 수행하지 않음
+    }
+
 
     @Override
     public void onPacketSending(PacketEvent event) {

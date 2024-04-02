@@ -47,9 +47,9 @@ public final class NoDamageParticles extends JavaPlugin implements Listener {
             this.getServer().getPluginManager().disablePlugin(this);
         }
 
-        getServer().getConsoleSender().sendMessage("[noDamageParticles] "+ChatColor.BLUE + "----------------------------------");
+        getServer().getConsoleSender().sendMessage("[noDamageParticles] "+ChatColor.BLUE + "-----------------------------------");
         getServer().getConsoleSender().sendMessage("[noDamageParticles] "+ChatColor.BLUE + "대미지 파티클 제거 플러그인 활성화");
-        getServer().getConsoleSender().sendMessage("[noDamageParticles] "+ChatColor.BLUE + "----------------------------------");
+        getServer().getConsoleSender().sendMessage("[noDamageParticles] "+ChatColor.BLUE + "-----------------------------------");
 
 
 
